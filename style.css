@@ -68,7 +68,7 @@ h1 {
     .hari-nav button {
         font-size: 0.9em;
         padding: 8px;
-        flex: 0 0 calc(100% / 3);
+        flex: 0 0 calc(100% / 4);
     }
     .jadwal-item h3 {
         font-size: 1em;
