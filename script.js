@@ -43,11 +43,16 @@ function tampilkanJadwal(hari) {
     const container = document.getElementById('jadwalContainer');
     container.innerHTML = '';
     if (jadwal[hari] && jadwal[hari].length > 0) {
-        jadwal[hari].forEach(item => {
+        jadwal[hari].forEach((item, index) => {
             const div = document.createElement('div');
-            div.className = 'jadwal-item';
+            div.className = 'jadwal-item card bg-base-300 h-20';
             div.innerHTML = `<h3>${item.pelajaran}</h3><p>${item.waktu}</p>`;
             container.appendChild(div);
+            if (!(index >= jadwal[hari].length - 1)) {
+                const divider = document.createElement('div');
+                divider.className = 'divider';
+                container.appendChild(divider);
+            }
         });
     } else {
         container.innerHTML = '<p class="no-jadwal">Tidak ada jadwal untuk hari ini</p>';

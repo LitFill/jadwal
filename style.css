@@ -34,15 +34,11 @@ h1 {
 }
 .jadwal-container {
     padding: 10px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .jadwal-item {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-.jadwal-item:last-child {
-    border-bottom: none;
 }
 .jadwal-item h3 {
     margin: 0;
@@ -58,6 +54,13 @@ h1 {
     text-align: center;
     font-size: 1em;
     color: #777;
+}
+.divider {
+    margin: 0;
+}
+
+footer {
+    margin-top: 20px;
 }
 
 /* Media Queries untuk Desain Responsif */
