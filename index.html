@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="caramellatte">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jadwal Pelajaran</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <!-- <link href="https://cdn.jsdelivr.net/combine/npm/daisyui@5/base/scrollbar.css,npm/daisyui@5/base/svg.css,npm/daisyui@5/base/reset.css,npm/daisyui@5/base/rootscrollgutter.css,npm/daisyui@5/base/rootcolor.css,npm/daisyui@5/base/properties.css,npm/daisyui@5/base/rootscrolllock.css,npm/daisyui@5/components/input.css,npm/daisyui@5/components/menu.css,npm/daisyui@5/components/table.css,npm/daisyui@5/components/toggle.css,npm/daisyui@5/components/button.css,npm/daisyui@5/components/checkbox.css,npm/daisyui@5/components/select.css,npm/daisyui@5/theme/black.css" rel="stylesheet" type="text/css" /> -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+    <body>
+        <h1>Jadwal Pelajaran Sanah 8</h1>
+        <div class="hari-nav">
+            <button class="btn btn-primary" data-hari="Senin"> Senin </button>
+            <button class="btn btn-primary" data-hari="Selasa">Selasa</button>
+            <button class="btn btn-primary" data-hari="Rabu">  Rabu  </button>
+            <button class="btn btn-primary" data-hari="Kamis"> Kamis </button>
+            <button class="btn btn-primary" data-hari="Jumat"> Jumat </button>
+            <button class="btn btn-primary" data-hari="Sabtu"> Sabtu </button>
+            <!-- <button data-hari="Minggu">Minggu</button> -->
+        </div>
+        <div class="jadwal-container" id="jadwalContainer">
+            <!-- Jadwal akan diisi di sini -->
+        </div>
+        <script src="script.js" defer>
+        </script>
+    </body>
+</html>
