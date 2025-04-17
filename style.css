@@ -1,60 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url(
+    "https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+);
 
 body {
-    font-family: "Geist", "JetBrains Mono", sans-serif;
+    font-family:         "Geist", "JetBrains Mono", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    margin: 0;
-    padding: 10px;
+    font-weight:         300;
+    font-style:          normal;
+    margin:              0;
+    padding:             10px;
 }
+
 h1 {
-    text-align: center;
-    font-size: 1.5em;
+    text-align:    center;
+    font-size:     1.5em;
     margin-bottom: 10px;
-    margin-top: 40px;
-    font-weight: bold;
+    margin-top:    40px;
+    font-weight:   bold;
 }
+
 .hari-nav {
-    display: flex;
+    display:         flex;
     justify-content: center;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
+    margin-bottom:   10px;
+    flex-wrap:       wrap;
+
+    & button {
+        font-family: "Geist", "JetBrains Mono", sans-serif;
+        padding:     10px;
+        font-size:   1em;
+        border:      none;
+        height:      2lh;
+        cursor:      pointer;
+        margin:      5px;
+        flex:        1 1 auto;
+        transition:  all 100ms;
+    }
 }
-.hari-nav button {
-    font-family: "Geist", "JetBrains Mono", sans-serif;
-    padding: 10px;
-    font-size: 1em;
-    border: none;
-    height: 2lh;
-    cursor: pointer;
-    margin: 5px;
-    flex: 1 1 auto;
-    transition: all 100ms
-}
+
 .jadwal-container {
     padding: 10px;
     /* border-radius: 5px; */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .jadwal-item {
     padding: 10px;
+
+    & h3 {
+        margin:      0;
+        font-size:   1.2em;
+        font-weight: 500;
+        transition:  all 200ms;
+    }
+
+    & p {
+        margin:    5px 0 0;
+        font-size: 0.9em;
+    }
 }
-.jadwal-item h3 {
-    margin: 0;
-    font-size: 1.2em;
-    font-weight: 500;
-    transition: all 200ms;
-}
-.jadwal-item p {
-    margin: 5px 0 0;
-    font-size: 0.9em;
-}
+
 .no-jadwal {
     text-align: center;
-    font-size: 1em;
-    color: #777;
+    font-size:  1em;
+    color:      #777;
 }
+
 .divider {
     margin: 0;
 }
@@ -68,16 +79,16 @@ footer {
     h1 {
         font-size: 1.2em;
     }
+
     .hari-nav button {
         font-size: 0.9em;
-        padding: 8px;
-        flex: 0 0 calc(100% / 4);
+        padding:   8px;
+        flex:      0 0 calc(100% / 4);
     }
-    .jadwal-item h3 {
-        font-size: 1em;
-    }
-    .jadwal-item p {
-        font-size: 0.8em;
+
+    .jadwal-item {
+        & h3 { font-size: 1em;   }
+        & p  { font-size: 0.8em; }
     }
 }
 
@@ -85,19 +96,20 @@ footer {
     h1 {
         font-size: 1.4em;
     }
+
     .hari-nav {
         justify-content: space-between;
+
+        & button {
+            font-size: 1em;
+            padding:   10px;
+            margin:    5px;
+        }
     }
-    .hari-nav button {
-        font-size: 1em;
-        padding: 10px;
-        margin: 5px;
-    }
-    .jadwal-item h3 {
-        font-size: 1.1em;
-    }
-    .jadwal-item p {
-        font-size: 0.9em;
+
+    .jadwal-item {
+        & h3 { font-size: 1.1em; }
+        & p  { font-size: 0.9em; }
     }
 }
 
@@ -105,11 +117,13 @@ footer {
     .hari-nav {
         justify-content: center;
     }
+
     .hari-nav button {
         margin: 0 10px;
     }
+
     .jadwal-container {
         max-width: 800px;
-        margin: 0 auto;
+        margin:    0 auto;
     }
 }
