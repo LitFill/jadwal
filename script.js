@@ -52,8 +52,8 @@ const container = document.getElementById("jadwalContainer");
 
 /**
  * Menampilkan jadwal pelajaran untuk hari tertentu di dalam elemen kontainer.
-    * Jika tidak ada jadwal untuk hari tersebut, menampilkan pesan bahwa tidak
-    * ada jadwal.
+ * Jika tidak ada jadwal untuk hari tersebut, menampilkan pesan bahwa tidak
+ * ada jadwal.
  * @param {string} hari - Nama hari dalam bahasa Indonesia (misalnya, "Senin").
  */
 function tampilkanJadwal(hari) {
@@ -61,12 +61,10 @@ function tampilkanJadwal(hari) {
 
     if (jadwal[hari] && jadwal[hari].length > 0) {
         const items = jadwal[hari].map(
-            (item) => `
-                        <div class="jadwal-item card bg-base-300 h-20">
-                                <h3>${item.pelajaran}</h3>
-                                <p> ${item.waktu    }</p>
-                        </div>
-                      `,
+            (item) => `<div class="jadwal-item card bg-base-300 h-20">
+    <h3>${item.pelajaran}</h3>
+    <p> ${item.waktu    }</p>
+</div> `,
         );
         container.innerHTML = items.join('<div class="divider"></div>');
     } else {

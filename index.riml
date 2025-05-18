@@ -19,14 +19,12 @@ html lang="id" data-theme="luxury" {
         h1 { "Jadwal Pelajaran Sanah 4" }
         label .swap .swap-rotate .fixed .top-4 .right-4 .z-50 {
             ! this hidden checkbox controls the state
-            input
-                .theme-controller
+            input .theme-controller
                 type="checkbox"
                 data-toggle-theme="luxury,caramellatte";
 
             ! sun icon
-            svg
-                .swap-off .h-10 .w-10 .fill-current
+            svg .swap-off .h-10 .w-10 .fill-current
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
             {
@@ -34,8 +32,7 @@ html lang="id" data-theme="luxury" {
             }
 
             ! moon icon
-            svg
-                .swap-on .h-10 .w-10 .fill-current
+            svg .swap-on .h-10 .w-10 .fill-current
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
             {
@@ -52,6 +49,248 @@ html lang="id" data-theme="luxury" {
         }
         div .jadwal-container .card #jadwalContainer {
             ! Jadwal akan diisi di sini
+        }
+        div .overflow-x-auto {
+            h2 .text-xl { "Senin" }
+            table .table {
+                thead {
+                    tr {
+                        th {}
+                        th { "Pelajaran" }
+                        th { "Waktu" }
+                    }
+                }
+                tbody {
+                    tr {
+                        th { "1" }
+                        th { "Aqidah" }
+                        th { "08:00 - 08:50" }
+                    }
+
+                    tr {
+                        th { "2" }
+                        th { "Bimbingan Bahtsu" }
+                        th { "08:50 - 09:40" }
+                    }
+
+                    tr {
+                        th { "3" }
+                        th { "Istirahat" }
+                        th { "09:40 - 10:15" }
+                    }
+
+                    tr {
+                        th { "4" }
+                        th { "Bimbingan Bahtsu" }
+                        th { "10:15 - 11:10" }
+                    }
+
+                    tr {
+                        th { "5" }
+                        th { "Bimbingan Bahtsu" }
+                        th { "11:10 - 12:00" }
+                    }
+
+                    tr {
+                        th { "6" }
+                        th { "Nahwu" }
+                        th { "14:00 - 15:00" }
+                    }
+
+                    tr {
+                        th { "7" }
+                        th { "Balaghoh" }
+                        th { "15:00 - 16:00" }
+                    }
+
+
+                }
+            }
+
+            h2 .text-xl { "Selasa" }
+            table .table {
+                thead {
+                    tr {
+                        th {}
+                        th { "Pelajaran" }
+                        th { "Waktu" }
+                    }
+                }
+                tbody {
+                    tr {
+                        th { "1" }
+                        th { "Ushul Fiqih" }
+                        th { "08:00 - 08:50" }
+                    }
+
+                    tr {
+                        th { "2" }
+                        th { "Ulumul Qur'an" }
+                        th { "08:50 - 09:40" }
+                    }
+
+                    tr {
+                        th { "3" }
+                        th { "Istirahat" }
+                        th { "09:40 - 10:15" }
+                    }
+
+                    tr {
+                        th { "4" }
+                        th { "Bimbingan Bahtsu" }
+                        th { "10:15 - 11:10" }
+                    }
+
+                    tr {
+                        th { "5" }
+                        th { "Bimbingan Bahtsu" }
+                        th { "11:10 - 12:00" }
+                    }
+                }
+            }
+
+            h2 .text-xl { "Rabu" }
+            table .table {
+                thead {
+                    tr {
+                        th {}
+                        th { "Pelajaran" }
+                        th { "Waktu" }
+                    }
+                }
+                tbody {
+
+
+                    tr {
+                        th { "1" }
+                        th { "Shorof" }
+                        th { "08:00 - 08:50" }
+                    }
+
+                    tr {
+                        th { "2" }
+                        th { "Manthiq" }
+                        th { "08:50 - 09:40" }
+                    }
+
+
+                }
+            }
+
+            h2 .text-xl { "Kamis" }
+            table .table {
+                thead {
+                    tr {
+                        th {}
+                        th { "Pelajaran" }
+                        th { "Waktu" }
+                    }
+                }
+                tbody {
+
+
+                    tr {
+                        th { "1" }
+                        th { "Bimbingan Bahtsu" }
+                        th { "08:00 - 08:50" }
+                    }
+
+                    tr {
+                        th { "2" }
+                        th { "Bimbingan Bahtsu" }
+                        th { "08:50 - 09:40" }
+                    }
+
+                    tr {
+                        th { "3" }
+                        th { "Istirahat" }
+                        th { "09:40 - 10:15" }
+                    }
+
+                    tr {
+                        th { "4" }
+                        th { "Fiqih" }
+                        th { "10:15 - 11:10" }
+                    }
+
+                    tr {
+                        th { "5" }
+                        th { "Fiqih" }
+                        th { "11:10 - 12:00" }
+                    }
+
+
+                }
+            }
+
+            h2 .text-xl { "Jumat" }
+            table .table {
+                thead {
+                    tr {
+                        th {}
+                        th { "Pelajaran" }
+                        th { "Waktu" }
+                    }
+                }
+                tbody {
+
+
+                    tr {
+                        th { "1" }
+                        th { "Bimbingan Bahtsu" }
+                        th { "08:00 - 09:00" }
+                    }
+
+                    tr {
+                        th { "2" }
+                        th { "Manthiq" }
+                        th { "09:00 - 10:00" }
+                    }
+
+                    tr {
+                        th { "3" }
+                        th { "Ushul Fiqih" }
+                        th { "10:00 - 11:00" }
+                    }
+
+
+                }
+            }
+
+            h2 .text-xl { "Sabtu" }
+            table .table {
+                thead {
+                    tr {
+                        th {}
+                        th { "Pelajaran" }
+                        th { "Waktu" }
+                    }
+                }
+                tbody {
+
+
+                    tr {
+                        th { "1" }
+                        th { "Aqidah" }
+                        th { "08:00 - 08:50" }
+                    }
+
+                    tr {
+                        th { "2" }
+                        th { "Qowaid Fiqih" }
+                        th { "10:15 - 11:10" }
+                    }
+
+                    tr {
+                        th { "3" }
+                        th { "Qowaid Fiqih" }
+                        th { "11:10 - 12:00" }
+                    }
+
+
+                }
+            }
+
         }
         footer
             .footer .sm:footer-horizontal .footer-center .bg-base-300

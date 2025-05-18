@@ -127,3 +127,7 @@ footer {
         margin:    0 auto;
     }
 }
+
+.table {
+    max-width: fit-content;
+}
